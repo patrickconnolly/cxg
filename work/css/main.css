@@ -1,0 +1,603 @@
+/* General Demo Style */
+
+
+body, html {
+  font-family: 'Raleway', sans-serif;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* Reset */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+a, a:hover { color: #ed1c24;}
+
+button {
+  cursor: pointer;
+}
+button:focus, input:focus {
+  outline: none;
+}
+.clearfix {
+  width: 100%;
+  display: block;
+  clear: both;
+}
+.container {
+  width: 960px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+/* Color Presets */
+.white-font { color: #fff;}
+.black-font { color: #000;}
+.gray-font { color: #9b9b9b;}
+.red-font { color: #ed1c24;}
+
+.underline { text-decoration: underline; }
+.semi-bold { font-weight: 600; }
+.bold { font-weight: bold; }
+
+.white-bg { background-color: #fff;}
+.gray-bg { background-color: #f1f2f2;}
+.black-bg { background-color: #000;}
+.red-bg { background-color: #9f1e19;}
+.red2-bg { background-color: #c20700; padding: 2px 4px; }
+.red3-bg { background-color: #320000; }
+
+
+/* Headers */
+h1,h2,h3,h4,h5,h6 {
+  text-transform: uppercase;
+}
+h1 {
+  margin: 0 auto;
+  margin-top: 20px;
+  text-indent: -99999px;
+  width: 200px;
+  height: 96px;
+  background: url('../img/cxg-logo.png') no-repeat;
+}
+h2 {
+  font-size: 72px;
+  font-weight: 800;
+}
+h3 {
+  font-size: 48px;
+  line-height: 1.2em;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+}
+h4 {
+  font-size: 36px;
+  font-weight: 600;
+}
+h5 {
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 48px;
+}
+.fixed-btn {
+  position: fixed;
+  z-index: 1100;
+  border: none;
+}
+
+/* Sidebar Menu */
+button#showLeftPush {
+  top: 200px; /* temporary */
+  margin: 0 auto;
+  left: 0;
+  text-indent: -9999px;
+  width: 40px;
+  height: 80px;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -10px -10px;
+}
+button#showLeftPush:hover { background-position: -60px -10px;}
+ul#sideNav {
+  margin: 0;
+}
+ul#sideNav li {
+  list-style: none;
+}
+ul#sideNav li a {
+  font-weight: 500;
+}
+ul#sideNav li a:hover {
+  color: #ed1c24;
+}
+
+/* To Top Button */
+a#toTop {
+  right: 40px;
+  bottom: 40px;
+  text-indent: -9999px;
+  width: 60px;
+  height: 60px;
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: -210px -235px;
+  background-color: #C9C9C9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";  /* IE 8 */
+  filter: alpha(opacity=50);  /* IE 5-7 */
+  -moz-opacity: 0.5;  /* Netscape */
+  -khtml-opacity: 0.5;  /* Safari 1.x */
+  opacity: 0.5;
+}
+a#toTop:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; /* IE 8 */
+  filter: alpha(opacity=100); /* IE 5-7 */
+  -moz-opacity: 1.0;  /* Netscape */
+  -khtml-opacity: 1.0;  /* Safari 1.x */
+  opacity: 1.0;
+}
+
+/* Top Video */
+#page-cover {
+  position: fixed;
+  z-index: 999999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+#cxg-video {
+  display: none;
+  z-index: 2000;
+  position: fixed;
+  width: 100%;
+  height: auto;
+}
+
+
+/* Main Content */
+#main-content {
+  max-width: 1900px;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* TOP INTRO Page */
+section#home {
+  position: relative;
+  clear: both;
+  width: 100%;
+  display: block;
+}
+section#home img#intro-logo {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+/* CONTACT page */
+#contact {
+  background: #fff;
+  height: 1200px;
+  z-index: 13;
+}
+#contact-logo-wrap, #contact-city-wrap, #contact-info-wrap {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+}
+#contact-city-wrap {
+  top: 260px;
+}
+#contact-info-wrap {
+  top: 350px;
+}
+#contact h4 {
+  margin: 40px 0 80px 0;
+}
+#contact p.contact-instructions {
+  color: #3E3E3E;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  width: 600px;
+}
+#contact p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+ul#social-media {
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+}
+ul#social-media li {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  list-style: none;
+  margin: 0 10px;
+}
+ul#social-media li span {
+  text-indent: -99999px;
+  display: block;
+  width: 36px;
+  height: 36px;
+  background: url('../img/sprite.png') no-repeat;
+  -webkit-transition: background-position 500ms ease;
+  -moz-transition: background-position 500ms ease;
+  transition: background-position 500ms ease;
+}
+ul#social-media li#ico-facebook span { background-position: -120px -10px; }
+ul#social-media li#ico-twitter span { background-position: -170px -10px; }
+ul#social-media li#ico-linkedin span { background-position: -224px -10px; }
+ul#social-media li#ico-instagram span { background-position: -274px -10px; }
+
+ul#social-media li#ico-facebook span:hover { background-position: -120px -60px; }
+ul#social-media li#ico-twitter span:hover { background-position: -170px -60px; }
+ul#social-media li#ico-linkedin span:hover { background-position: -224px -60px; }
+ul#social-media li#ico-instagram span:hover { background-position: -274px -60px; }
+
+/* ABOUT page */
+#about {
+  background: #fff;
+  height: 750px;
+  z-index: 14;
+}
+#about-wrap {
+  overflow:hidden;
+  text-align: center;
+  height: 750px;
+  padding: 80px 0 40px 0;
+}
+#ny-skyline, #chi-skyline, #sf-skyline {
+  margin-top: 100px;
+  position: absolute;
+  width: 100%;
+  height: 454px;
+  background: url('../img/skyline1.png');
+}
+#chi-skyline {
+  background: url('../img/skyline2.png');
+}
+
+#sf-skyline {
+  background: url('../img/skyline3.png');
+  height: 480px;
+}
+#about .container {
+  height: 750px;
+}
+#about h2, #about h5 {
+  margin: 0 auto;
+}
+#about h2 {
+  width: 100%;
+  position: absolute;
+  margin-top: 80px;
+  top: 100px;
+}
+#about h5 {
+  margin: 60px 0 60px 0;
+}
+.about-info {
+  top: 200px;
+  position: absolute;
+}
+#about hr {
+  width: 50%;
+  clear: both;
+  margin: 0 auto;
+}
+
+/* iPad portrait and landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+  #main-content { height: 10480px; }
+  .angle-slide { width: 100%; height: 2000px; margin-top: 0; }
+  .right-bg, .left-bg { margin-right: 0; margin-left: 0; transform: rotate(0deg); -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+  #slide1b, #slide2b, #slide3b, #slide4b, #slide5b, #slide6b, #slide7b { display: none; }
+  button#showLeftPush { top: 296px; }
+  .wrap { margin-top: 0; padding-top: 60px; }
+  section#home { height: 700px; }
+  #slide1a { background-image: url('../img/cutout-bg-ipad.jpg'); background-position: center top; }
+  #home .span7, #home .span5 { margin-top: 40px; }
+  section#home img#intro-logo { margin-top: 80px; }
+  section#what-we-do { height: 768px;}
+  section#change-agents { height: 768px; }
+  #change-agents .tag-wrap { margin-top: 180px; }
+  #xrain3 { display: none; }
+  section#your-side { height: 1800px; }
+  #your-side .wrap { overflow: hidden; }
+  #x1-white, #x2-white { top: -500px; left: 150px; }
+  #your-side h2 { margin-top: 100px; }
+  #your-side h5 { position: relative; }
+  #x1-gray, #x2-gray { top: -400px; right: 142px; }
+  .sub-slide { padding: 80px 0 80px 0; height: 420px; }
+  #subslide1 { height: 360px; }
+  #subslide3 { height: 460px; }
+  #subslide4 { height: 400px; }
+  #call-us-when { height: 1000px; }
+  #call-us-when h2, #call-us-when h3, ul#magnify-list { position: relative; padding-left: 0; }
+  #call-us-when h3 { margin-top: 20px; }
+  ul#magnify-list { display: block; margin: 40px 0 0 40px; }
+  ul#magnify-list li { opacity: 1; padding-left: 40px; }
+  section#approach { height: 768px; }
+  #slide5a { background-position: center -150px; }
+  #experience { overflow: hidden; margin-top: 0; padding: 0; height: 1280px; }
+  #x1-darkgray { left: 360px; top: -500px; }
+  #x2-darkgray { left: 550px; top: -500px; }
+  #experience h4, #experience h2, #experience .line-wrap, .exp-content, #client-display { position: relative; top: 0; }
+  #experience h2 { margin-top: 0; padding: 20px 0; }
+  #client-display { margin-top: 40px; }
+  section#team { height: 1060px; }
+  .bio-details p { padding-top: 20px; }
+  section#contact { height: 768px; }
+  #contact-logo-wrap, #contact-city-wrap, #contact-info-wrap { position: relative; top: 0; }
+  #contact-logo-wrap { margin-top: 40px; }
+  #contact h4 { margin: 40px 0; }
+  #about, #about-wrap { height: 768px; }
+  #about h2, .about-info { position: relative; top: 0; }
+  #chi-skyline { margin-top: 200px; }
+  #sf-skyline { margin-top: 400px; }
+
+}
+/* ipad portrait */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  #main-content { height: 10980px; }
+  .container { width: 768px; }
+  h2 { font-size: 66px; line-height: 72px; }
+  h3 { font-size: 40px; line-height: 48px; }
+  section#home { height: 960px; }
+  section#home img#intro-logo { margin-top: 130px; }
+  section#what-we-do { height: 860px; }
+  #what-we-do .span7, #what-we-do .span5 { text-align: center; width:728px; }
+  .subsection { clear: both; display: block; width: 600px; text-align: left; margin: 0 auto;  }
+  .subsection span { margin: 20px 20px 0 0; }
+  #exciting span { width: 50px; }
+  .subsection p { width: 500px; }
+  section#change-agents { height:500px; }
+  #change-agents .tag-wrap { margin-top: 80px; }
+  #change-agents h2 { letter-spacing: 0.1em; padding: 0; }
+  section#your-side { height: 2000px; }
+  #your-side .container { width: 748px; padding: 0 10px 0 10px; }
+  #x1-white, #x2-white { top: -400px; }
+  #subslide2 { height: 470px; }
+  #subslide3 { height: 510px; }
+  #subslide4 { height: 440px; }
+  #call-us-when h2, #call-us-when h3 { margin-top: 0; }
+  section#approach { height: 1000px; }
+  #approach .span6 { float: none; width: 600px; margin: 0 auto; text-align: center; }
+  .subrow { height: 200px; }
+  #subrow3, #subrow4 { height: 170px; }
+  #x1-darkgray { left: 240px; }
+  #x2-darkgray { left: 430px; }
+  #experience { height: 1140px; }
+  #experience h2 { padding: 0; letter-spacing: 0.4em;}
+  #experience p { padding: 0 0 20px 0; }
+  #client-display { background: url('../img/diamond-pattern-ipad-portrait.png') repeat-x; height: 300px; }
+  .client-wrap { background: url('../img/clients-inactive-ipad-portrait.png') no-repeat; }
+  section#team { height: 1100px; }
+  ul#bio-photo-wrap, ul#bio-arrows-wrap, #bio-detail-wrap { position: relative; top: 0; }
+  ul#bio-photo-wrap { height: 224px; }
+  ul#bio-photo-wrap li, ul#bio-photo-wrap li span { background: url('../img/bio-photos-ipad-portrait.jpg') no-repeat; }
+  ul#bio-photo-wrap li { width: 164px; height: 224px; }
+  ul#bio-photo-wrap li#photo-don-moss { background-position: -165px 0; }
+  ul#bio-photo-wrap li#photo-nan-lyons { background-position: -330px 0; }
+  ul#bio-photo-wrap li#photo-mike-burgess { background-position: -495px 0; }
+  ul#bio-photo-wrap li span { padding: 80px 10px 10px 10px; height: 224px; }
+  ul#bio-photo-wrap li#photo-patrick-connolly span { background-position: 0 -224px; }
+  ul#bio-photo-wrap li#photo-don-moss span { background-position: -165px -224px; }
+  ul#bio-photo-wrap li#photo-nan-lyons span { background-position: -330px -224px; }
+  ul#bio-photo-wrap li#photo-mike-burgess span { background-position: -495px -224px; }
+  ul#bio-arrows-wrap li { width: 164px; }
+  #targeted { height: 520px; background-position: center -400px; }
+  #targeted .container { padding-top: 0; }
+  #targeted h3 { font-size: 50px; line-height: 56px; letter-spacing: 0.02em; }
+  #about { height: 1024px; }
+  #about-wrap { height: 1024px; }
+  #ny-skyline { margin-top: 300px; }
+  #chi-skyline { margin-top: 500px; }
+  #sf-skyline { margin-top: 700px; }
+}
+/* iphone landscape and portrait */
+@media only screen and (max-device-width: 767px) {
+  #x1-white, #x2-white, #x1-gray, #x2-gray, #x1-darkgray, #x2-darkgray { display: none; }
+  #main-content { height: 8180px; }
+  .container { width: 460px; padding: 0 10px 0 10px; }
+  p { font-size: 18px; line-height: 24px; text-align: center; }
+  h1, h2, h3, h4, h5 { text-align: center; }
+  h1 { width: 120px; height: 58px; background-size: 120px 58px; margin-bottom: 20px; }
+  h2 { font-size: 54px; line-height: 60px; }
+  h3 { font-size: 36px; line-height: 48px; }
+  h4 { font-size: 20px; line-height: 30px; }
+  h5 { font-size: 18px; line-height: 36px; }
+  .wrap { margin-top: 40px; }
+  a#toTop { right: 10px; bottom: 10px; width: 40px; height: 40px; background-position: -220px -247px; }
+  .cbp-spmenu-inner { padding-right: 40px; padding-left: 40px; width: 190px; }
+  .cbp-spmenu a { padding: 0; }
+  button#showLeftPush { top: 40px; }
+  section { padding-top: 0; padding-bottom: 0; }
+  .angle-slide { width: 100%; height: 2000px; margin-top: 0; }
+  .right-bg, .left-bg { margin-right: 0; margin-left: 0; transform: rotate(0deg); -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+  #slide1b, #slide2b, #slide3b, #slide4b, #slide5b, #slide6b, #slide7b { display: none; }
+  section#home { height: 280px; }
+  section#home img#intro-logo { width: 200px; height: 93px; margin-top: 30px; margin-bottom: 10px; }
+  #home h4 { font-size: 18px; line-height: 24px; }
+  #home p { font-size: 18px; line-height: 24px; padding-top: 5px; }
+  #slide1a { background-image: url('../img/cutout-bg-iphone-landscape.jpg'); background-position: center 0; }
+  section#what-we-do { height: 1040px; }
+  #what-we-do h3 { margin-top: 20px; }
+  #what-we-do .span7, section#what-we-do .span5 { width: 100%; float: none; margin: 0 auto; padding: 0 20px; }
+  .subsection span { float: none; margin: 0 auto; margin-top: 20px; }
+  .subsection p { float: none; width: 100%; padding: 10px 40px; margin: 0; }
+  section#change-agents { height: 260px; }
+  #change-agents .tag-wrap { margin-top: 60px; }
+  #change-agents h2 { padding:0; font-size: 40px; line-height: 48px; }
+  #change-agents h3 { font-size: 24px; line-height: 30px; }
+  #xrain3 { display: none; }
+  #your-side { height: 1240px; }
+  #your-side .wrap { overflow: hidden; }
+  #your-side h2 { margin-top: 40px; font-size: 50px; line-height: 58px; }
+  .sub-slide { height: 320px;}
+  #subslide1 { padding: 0 10px 80px 10px; height: 210px; }
+  #subslide2, #subslide3, #subslide4 { padding: 40px 10px; }
+  #subslide3 { height: 360px; }
+  #x2-gray, #x1-gray { margin-top: -300px; left: 560px; }
+  #x2-gray { margin-top: -1000px; }
+  #x1-white, #x2-white { top: -460px; left: 100px; }
+  #call-us-when { height: 860px; }
+  #call-us-when h2, #call-us-when h3 { position: relative; }
+  #call-us-when h2 { top: 40px; }
+  #call-us-when h3 { font-size: 20px; line-height: 24px; margin-top: 40px; }
+  #magnify-list { padding-left: 40px; margin: 20px 0 0 0; display: block;}
+  #magnify-list li { font-size: 16px; line-height: 20px; opacity: 1; padding-left: 40px; }
+  #slide5a { background-position: center 0; }
+  #approach { height: 1300px; }
+  #approach h2 { top: 40px; position: relative; }
+  #approach .span6 { width: 420px; margin-left: 0;}
+  #approach-points { margin-top: 60px; }
+  h3#insight span { width: 98px; }
+  h3#execution span { width: 60px; }
+  h3#inspiration span { width: 42px; }
+  h3#metrics span { width: 56px; }
+  h3.approach-header span { display: block; margin: 0 auto; }
+  .subrow { height: auto; margin-bottom: 20px; }
+  .subrow p { padding: 0 40px; }
+  #experience { padding-top: 40px; height: 1000px; }
+  #x1-darkgray, #x2-darkgray { left: 40px; }
+  #experience h4, #experience h2 { position: relative; padding: 5px 0 5px 0; margin: 0; top: 0; }
+  #experience h4 { margin-top: 40px; }
+  #experience h2 { font-size: 40px; line-height: 40px; letter-spacing: 0.5em; margin-top: 10px; }
+  .line-wrap, .exp-content { position: relative; top: 0; margin-top: 0px; }
+  #experience p { font-size: 16px; line-height: 24px; }
+  #client-display { margin-top: 0; padding-top: 30px; position: relative; top: 0; height: 245px; background-image: url('../img/diamond-pattern-iphone-landscape.png'); background-repeat: repeat-x; }
+  .client-wrap { position: relative; top: 0; width: 480px; height: 184px; background-image: url('../img/clients-inactive-iphone-landscape.png'); background-repeat: no-repeat;}
+  .active-logo { width: 194px; height: 120px; background: url('../img/sprite-client-active-ipad-portrait.png') no-repeat; }
+  #coca-cola-active { left: 92px; top: 0; background-position:  1px 1px; }
+  #cisco-active { left: 286px; top: 0; background-position: -191px 1px; }
+  #motorola-active { left: 482px; top: 0; background-position: -383px 1px; }
+  #nissan-active { left: -6px; top: 60px; background-position: -575px 1px; }
+  #xerox-active { left: 189px; top: 60px; background-position: 1px -118px; }
+  #pfizer-active { left: 384px; top: 60px; background-position: -191px -118px; }
+  #ibm-active { left: 579px; top: 60px; background-position: -383px -118px; }
+  #shell-active { left: 92px; top: 120px; background-position: -575px -118px; }
+  #panasonic-active { left: 286px; top: 120px; background-position: 1px -236px; }
+  #frito-lay-active { left: 482px; top: 120px; background-position: -191px -236px; }
+  #lexus-active { left: -6px; top: 180px; background-position: -383px -236px; }
+  #oracle-active { left: 189px; top: 180px; background-position: -575px -236px; }
+  #fifa-active { left: 384px; top: 180px; background-position: 1px -354px; }
+  #olympics-active { left: 579px; top: 180px; background-position: -191px -354px; }
+  map#client-map { display: none; }
+  section#team { height: 980px; }
+  ul#bio-photo-wrap, ul#bio-arrows-wrap, #bio-detail-wrap { position: relative; top: 0; }
+  ul#bio-photo-wrap { height: 130px;  margin-top: 40px; }
+  ul#bio-photo-wrap li, ul#bio-photo-wrap li span { width: 95px; height: 130px; background-image: url('../img/bio-photos-iphone-landscape.jpg'); }
+  li#photo-don-moss { background-position: -95px 0; }
+  li#photo-nan-lyons { background-position: -190px 0; }
+  li#photo-mike-burgess { background-position: -285px 0; }
+  li#photo-patrick-connolly span { background-position: 0 -130px; }
+  li#photo-don-moss span { background-position: -95px -130px; }
+  li#photo-nan-lyons span { background-position: -190px -130px; }
+  li#photo-mike-burgess span { background-position: -285px -130px; }
+  ul#bio-photo-wrap li span h4 { display: none;  }
+  #team ul li { width: 95px; }
+  ul#bio-arrows-wrap { margin-bottom: 10px; }
+  .bio-details { padding: 0 10px 0 10px; }
+  .bio-details h2 { font-size: 40px; line-height: 46px; margin: 10px 0 5px 0; }
+  .bio-details h4 { margin-bottom: 20px; }
+  #targeted { background: url('../img/city-street-iphone-landscape.jpg') no-repeat; height: 460px; }
+  #targeted .tagline-wrap { position: relative; top: 0; }
+  #targeted .container { padding-top: 40px; }
+  #targeted h3 { font-size: 40px; line-height: 40px; letter-spacing: 0.03em; }
+  #targeted span.black-pill { display: none; }
+  #contact { height: 480px; }
+  #contact-logo-wrap, #contact-city-wrap, #contact-info-wrap { position: relative; top: 0; }
+  #contact h4 { margin: 20px 0 20px 0; }
+  #contact p.contact-instructions { width: 350px; }
+  #contact img { width: 300px; height: 142px; }
+  #about { overflow: hidden; height: 400px; }
+  #about-wrap { padding: 40px 0 0 0; }
+  #about h2 { position: relative; margin-top: 0; top: 0; }
+  .about-info { position: relative; top: 0; }
+  #about h5 { margin: 20px 0 20px 0; }
+  #ny-skyline, #chi-skyline, #sf-skyline { top: 0; }
+  #ny-skyline { margin-top: -80px; }
+  #chi-skyline { margin-top: 60px; }
+  #sf-skyline { margin-top: 160px; }
+}
+/* iphone portrait */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+  #main-content { height: 8200px; }
+  .container { width: 310px; padding: 0 10px 0 10px; }
+  h2 { font-size: 36px; lin-height: 40px; }
+  h3 { font-size: 30px; line-height: 34px; }
+  button#showLeftPush { top: 210px; }
+  section#home { height: 250px; }
+  section#what-we-do { height: 1060px; }
+  #what-we-do h3 { font-size: 22px; line-height: 26px; }
+  #exciting span { width: 50px; }
+  .subsection p { padding: 10px 20px; }
+  #xrain3 { display: none; }
+  section#change-agents { height: 200px; }
+  #change-agents h2 { font-size: 24px; line-height: 30px; }
+  #change-agents h4 { font-size: 18px; line-height: 24px; }
+  #your-side { height: 1285px; }
+  #your-side h2 { font-size: 24px; line-height: 30px; }
+  #your-side h5 { line-height: 28px; }
+  .sub-slide { height: 340px; }
+  #subslide1 { height: 220px; }
+  #subslide2, #subslide3, #subslide4 { padding: 20px 10px; }
+  #subslide3 { height: 400px; }
+  section#call-us-when { height: 880px; }
+  #call-us-when h2, #call-us-when h3 { padding-left: 0;}
+  #call-us-when h3 { font-size: 18px; line-height: 24px; letter-spacing: 0.02em; margin-top: 30px; }
+  #magnify-list { padding-left: 10px; }
+  #magnify-list li { line-height: 18px; }
+  #approach { height: 1500px; }
+  #approach .span6 { width: 100%; }
+  #approach h3 { margin-bottom: 10px; }
+  #x1-darkgray { left: -180px; }
+  #x2-darkgray { left: 0; }
+  #experience { height: 920px; }
+  #experience h2 { font-size: 32px; line-height: 32px; letter-spacing: 0.3em; padding: 0; }
+  #experience hr { margin-top: 20px; margin-bottom: 20px; }
+  #experience p { width: 90%; }
+  #client-display{ margin-top: 10px; height: 126px; background-image: url('../img/diamond-pattern-iphone-portrait.png'); padding-top: 0; }
+  .client-wrap { background-image: url('../img/clients-inactive-iphone-portrait.png'); }
+  section#team { height: 980px; }
+  ul#bio-photo-wrap { height: 86px; }
+  ul#bio-photo-wrap li, ul#bio-photo-wrap li span { padding: 0; width: 64px; height: 86px; background-image: url('../img/bio-photos-iphone-portrait.jpg'); }
+  ul#bio-photo-wrap li { margin: 0 1px 0 1px; }
+  li#photo-patrick-connolly { background-position: 0 0; }
+  li#photo-don-moss { background-position: -64px 0; }
+  li#photo-nan-lyons { background-position: -128px 0; }
+  li#photo-mike-burgess { background-position: -192px 0; }
+  li#photo-patrick-connolly span { background-position: 0 -87px; }
+  li#photo-don-moss span { background-position: -64px -87px; }
+  li#photo-nan-lyons span { background-position: -128px -87px; }
+  li#photo-mike-burgess span { background-position: -192px -87px; }
+  ul#bio-arrows-wrap { height: 20px; }
+  ul#bio-arrows-wrap li { width: 64px; height: 20px; margin: 0 1px 0 1px; }
+  ul#bio-arrows-wrap li span { background-position: -250px -200px; width: 40px; height: 18px; }
+  ul#bio-arrows-wrap li.active span { background-position: -250px -172px; width: 40px; height: 18px; }
+  .bio-details h2 { font-size: 24px; line-height: 30px; margin: 0; }
+  .bio-details h4 { font-size: 14px; line-height: 18px; margin: 0 0 20px 0; padding: 0; }
+  .bio-details p { font-size: 16px; line-height: 20px; }
+  section#targeted { height: 380px; }
+  #targeted .container { padding-top: 20px; }
+  #targeted h3 { font-size: 30px; line-height: 36px; }
+  #contact img { width: 240px; height: 114px; }
+  #contact p.contact-instructions { width: 240px; line-height: 20px; }
+  #about h5 { line-height: 24px; }
+}

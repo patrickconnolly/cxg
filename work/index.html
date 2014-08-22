@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+      <title>CXG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <meta name="description" content="CXG.A new full service agency. Helping clients design, develop and deliver
+    effective brand interactions for Consumers, Customers, Developers and User Groups, Distributors, Press, Investors/Analysts, Sales Organizations and Employee Stakeholders.">
+    <meta name="keywords" content="CXG, agency, brands">
+      <meta name="author" content="PowerHouse Creatve">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+      <!-- <link href="css/bootstrap-responsive.css" rel="stylesheet"> -->
+    <link href="css/component.css" rel="stylesheet"/>
+    <!--link href="js/videojs/video-js.css" rel="stylesheet" type="text/css"-->
+    <link href="css/main.css" rel="stylesheet" />
+
+    <!--script src="js/modernizr.custom.js"></script-->
+
+    <!-- HTML5 shim, for IE6-/8 support of HTML5 elements -->
+      <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+      <![endif]-->
+
+  </head>
+  <body class="cbp-spmenu-push">
+
+
+    <button class="fixed-btn" id="showLeftPush">Show</button>
+    <a href="#top" class="fixed-btn" id="toTop"><span>Back to Top</span></a>
+
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+      <div class="cbp-spmenu-inner">
+        <h1>CXG</h1>
+        <ul id="sideNav">
+          <li><a href="/#home">Home</a></li>
+          <li><a href="/#what-we-do">What We Do</a></li>
+          <li><a href="/#call-us-when">When To Call Us</a></li>
+          <li><a href="/#approach">Approach</a></li>
+          <li><a href="/#experience">Our Team</a></li>
+          <li><a href="/work/">Our Work</a></li>
+          <li><a href="/#contact">Contact</a></li>
+          <li><a href="/#about">About Us</a></li>
+        </ul>
+      </div>
+      <div class="cbp-spmenu-cutout"></div>
+    </nav>
+    <div id="main-content">
+      <section id="home">
+        <img id="intro-logo" src="img/cxg-logo-lrg.png" alt="CXG Collective-Experience Group" style="height:100px; margin-top:30px" />
+
+        <h4 class="gray-font">Browse some of our latest work</h4>
+        <p class="gray-font">Live events, branding and video production</p>
+      </section><!-- end section HOME -->
+
+      <section id="work" style="background:#ddd; margin-top:50px;">
+
+        <h5>Insert yo homeboy imagerz heer</h5>
+
+      </section>
+    </div><!-- end main content -->
+
+
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <!--script src="js/jquery.easing.1.3.js"></script-->
+    <!--script src="js/stellar.js"></script>  Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+    <script src="js/classie.js"></script>
+    <script>
+      var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+        showRightPush = document.getElementById( 'showRightPush' ),
+        body = document.body;
+        //overall = document.getElementById('overall');
+
+      showLeftPush.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( body, 'cbp-spmenu-push-toright' );
+        classie.toggle( menuLeft, 'cbp-spmenu-open' );
+        disableOther( 'showLeftPush' );
+        classie.toggle( document.getElementById('our-team'), 'shift' );
+        classie.toggle( document.getElementById('your-side'), 'shift' );
+      };
+
+      function disableOther( button ) {
+        if( button !== 'showLeftPush' ) {
+          classie.toggle( showLeftPush, 'disabled' );
+        }
+      }
+    </script>
+    <!--script src="js/videojs/video.js"></script>
+    <script src="js/main.js"></script-->
+  </body>
+</html>
