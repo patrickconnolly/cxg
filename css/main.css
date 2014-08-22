@@ -2,10 +2,10 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,800,900);
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
 
-body, html { 
+body, html {
 	font-family: 'Raleway', sans-serif;
-	font-size: 100%; 
-	padding: 0; 
+	font-size: 100%;
+	padding: 0;
 	margin: 0;
 	background: #fff;
 	color: #000;
@@ -31,7 +31,7 @@ button {
 button:focus, input:focus {
 	outline: none;
 }
-.clearfix { 
+.clearfix {
 	width: 100%;
 	display: block;
 	clear: both;
@@ -73,8 +73,8 @@ h1 {
 	height: 96px;
 	background: url('../img/cxg-logo.png') no-repeat;
 }
-h2 { 
-	font-size: 72px; 
+h2 {
+	font-size: 72px;
 	font-weight: 800;
 }
 h3 {
@@ -87,7 +87,7 @@ h4 {
 	font-size: 36px;
 	font-weight: 600;
 }
-h5 { 
+h5 {
 	font-size: 30px;
 	font-weight: normal;
 	text-transform: none;
@@ -95,7 +95,7 @@ h5 {
 }
 .fixed-btn {
 	position: fixed;
-	z-index: 1100;	
+	z-index: 1100;
 	border: none;
 }
 
@@ -146,7 +146,7 @@ a#toTop:hover {
 	filter: alpha(opacity=100);	/* IE 5-7 */
 	-moz-opacity: 1.0;	/* Netscape */
 	-khtml-opacity: 1.0;	/* Safari 1.x */
-	opacity: 1.0;	
+	opacity: 1.0;
 }
 
 /* Top Video */
@@ -241,11 +241,11 @@ section#what-we-do {
 	height: 1100px;
 	color: #fff;
 }
-#slide1a { 
-	background-image: url('../img/cutout-bg.jpg'); 
+#slide1a {
+	background-image: url('../img/cutout-bg.jpg');
 	background-repeat: no-repeat;
 	background-position: 3060px 1960px;
-} 
+}
 p {
 	font-size: 24px;
 	line-height: 36px;
@@ -259,13 +259,13 @@ p {
 	background: url('../img/sprite.png') no-repeat;
 	margin: 30px 10px 0 0;
 }
-#exciting span { 
+#exciting span {
 	background-position: -10px -230px;
 }
-#online-spaces span { 
+#online-spaces span {
 	background-position: -67px -230px;
 }
-#inspiring span { 
+#inspiring span {
 	background-position: -134px -230px;
 }
 
@@ -294,13 +294,13 @@ section#change-agents {
 	width: 3500px;
 	height: 3500px;
 }
-#xrain2 { 
-	background: url('../img/xRain2.png') repeat; 
+#xrain2 {
+	background: url('../img/xRain2.png') repeat;
 	width: 3600px;
 	height: 3600px;
 }
-#xrain3 { 
-	background: url('../img/xRain3.png') repeat; 
+#xrain3 {
+	background: url('../img/xRain3.png') repeat;
 	width: 4080px;
 	height: 4080px;
 	margin-left: 300px;
@@ -393,8 +393,8 @@ section#change-agents {
 	padding:0 0 80px 0;
 	overflow: hidden;
 }
-#subslide3 { 
-	background-image: url('../img/marketing-bg.jpg'); 
+#subslide3 {
+	background-image: url('../img/marketing-bg.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-color: #780308;
@@ -493,7 +493,7 @@ section#change-agents {
 	margin: 80px 0 40px 0;
 	padding: 12px 0 12px 0;
 }
-.approach-key-words p { 
+.approach-key-words p {
 	text-transform: uppercase;
 	font-weight: 500;
 	letter-spacing: 0.08em;
@@ -570,7 +570,7 @@ h3#metrics span {
 	-o-border-radius: 48px;
 	-ms-border-radius: 48px;
 }
-#x1-darkgray { 
+#x1-darkgray {
 	top: -600px;
 	margin-right: 600px;
 	transform: rotate(-45deg);
@@ -579,7 +579,7 @@ h3#metrics span {
 	-o-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
 }
-#x2-darkgray { 
+#x2-darkgray {
 	margin-right: 600px;
 	top: -200px;
 	transform: rotate(45deg);
@@ -601,8 +601,8 @@ h3#metrics span {
 #experience h2 {
 	margin-top: 60px;
 }
-h2#exp2 { 
-	margin: 140px 0 40px 0; 
+h2#exp2 {
+	margin: 140px 0 40px 0;
 }
 .exp-content {
 	top: 280px;
@@ -675,7 +675,7 @@ img.inactive-logo {
 	left: 390px;
 	top: 0;
 }
-#motorola-active {	
+#motorola-active {
 	background-position: -520px 0;
 	left: 650px;
 	top: 0;
@@ -822,7 +822,7 @@ ul#bio-arrows-wrap li span {
 	height: 42px;
 	margin: 0 auto;
 }
-ul#bio-arrows-wrap li.active span { 
+ul#bio-arrows-wrap li.active span {
 	background-position: -10px -173px;
 }
 #bio-detail-wrap {
@@ -1053,7 +1053,7 @@ ul#social-media li#ico-instagram span:hover { background-position: -274px -60px;
 	#about h2, .about-info { position: relative; top: 0; }
 	#chi-skyline { margin-top: 200px; }
 	#sf-skyline { margin-top: 400px; }
-	
+
 }
 /* ipad portrait */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
@@ -1073,7 +1073,7 @@ ul#social-media li#ico-instagram span:hover { background-position: -274px -60px;
 	#change-agents .tag-wrap { margin-top: 80px; }
 	#change-agents h2 { letter-spacing: 0.1em; padding: 0; }
 	section#your-side { height: 2000px; }
-	#your-side .container { width: 748px; padding: 0 10px 0 10px; }	
+	#your-side .container { width: 748px; padding: 0 10px 0 10px; }
 	#x1-white, #x2-white { top: -400px; }
 	#subslide2 { height: 470px; }
 	#subslide3 { height: 510px; }
@@ -1094,7 +1094,7 @@ ul#social-media li#ico-instagram span:hover { background-position: -274px -60px;
 	ul#bio-photo-wrap, ul#bio-arrows-wrap, #bio-detail-wrap { position: relative; top: 0; }
 	ul#bio-photo-wrap { height: 224px; }
 	ul#bio-photo-wrap li, ul#bio-photo-wrap li span { background: url('../img/bio-photos-ipad-portrait.jpg') no-repeat; }
-	ul#bio-photo-wrap li { width: 164px; height: 224px; } 
+	ul#bio-photo-wrap li { width: 164px; height: 224px; }
 	ul#bio-photo-wrap li#photo-don-moss { background-position: -165px 0; }
 	ul#bio-photo-wrap li#photo-nan-lyons { background-position: -330px 0; }
 	ul#bio-photo-wrap li#photo-mike-burgess { background-position: -495px 0; }
