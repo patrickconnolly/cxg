@@ -803,6 +803,7 @@ ul#bio-photo-wrap li span h4 {
 	font-family: 'Josefin Sans', helvetica, arial, sans-serif;
 	font-size: 24px;
 	line-height: 1em;
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
 }
 ul#bio-arrows-wrap {
 	position: absolute;
