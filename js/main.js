@@ -25,7 +25,7 @@ function navSlide() {
 			if (hash === 'home' || hash === 'about') { var top = 0; }
 		}
 		var scrollPos = $('#' + hash).offset().top + top;
-		
+
 		$('html,body').animate({ 'scrollTop': scrollPos + 'px' }, 400, 'easeInOutQuint', function () {
 			window.location.hash = hash;
 			$('body').removeClass('cbp-spmenu-push-toright');
@@ -75,20 +75,20 @@ function videoSizer() { // adjust the height
 function bioSwitch() {
 	$('#bio-arrows-wrap li span').hide(0);
 	$('#bio-arrows-wrap li.active span').show(0);
-	
+
 	// Hover Switch Affect
 	$('#bio-photo-wrap li').mouseenter(function() {
 		$(this).children('span').fadeIn(400, 'easeInOutQuint');
 	}).mouseleave(function() {
 		$(this).children('span').fadeOut(400, 'easeInOutQuint');
 	});
-	
+
 	// Click Switch Affect
 	$('#bio-photo-wrap li').click(function() {
 		var bioId = $(this).attr('id');
 		var arrowId = '#arrow-' + bioId.substring(6);
 		var detailId = '#bio-'+ bioId.substring(6);
-    	
+
 		$('#bio-detail-wrap > .active').fadeOut(400, 'easeInOutQuint').removeClass('active');
 		$(detailId).fadeIn(400, 'easeInQuint').addClass('active');
     	
@@ -99,26 +99,26 @@ function bioSwitch() {
 			$(this).parent('li').addClass('active');
 		});
 	});
-	
+
 }
 
 function mobileBioSwitch() {
 	$('#bio-arrows-wrap li span').hide(0);
 	$('#bio-arrows-wrap li.active span').show(0);
 	$('#bio-photo-wrap li.active span').show(0);
-	
+
 	// Click Switch Affect
 	$('#bio-photo-wrap li').click(function() {
 		var bioId = $(this).attr('id');
 		var arrowId = '#arrow-' + bioId.substring(6);
 		var detailId = '#bio-'+ bioId.substring(6);
-    	
+
 		$('#bio-photo-wrap li.active').removeClass('active').children('span').fadeOut(400, 'easeInOutQuint');
 		$(this).addClass('active').children('span').fadeIn(400, 'easeInOutQuint');
-		
+
 		$('#bio-detail-wrap > .active').fadeOut(400, 'easeInOutQuint').removeClass('active');
 		$(detailId).fadeIn(400, 'easeInQuint').addClass('active');
-    	
+
 		$('#bio-arrows-wrap > li.active span').fadeOut(400, 'easeInOutQuint', function() {
 			$(this).parent('li').removeClass('active');
 		});
@@ -126,15 +126,15 @@ function mobileBioSwitch() {
 			$(this).parent('li').addClass('active');
 		});
 	});
-	
+
 }
 function callUsList() {
 	$(window).on('scroll.callUsList', function () {
 		var windowHeight = $(window).height();
 		var windowTop = $(window).scrollTop();
 		var slideInDelay = 0;
-		
-	
+
+
 		if(windowTop >= $('#call-us-when').offset().top) { // if the user scrolls to "Call Us When"
 			if(!$('#magnify-list').hasClass('active')) { // if the slide out animation hasn't played yet,
 				$('#magnify-list li').each(function () {
@@ -164,7 +164,7 @@ function clientMap() {
 function approachBanner() {
 	$(window).on('scroll.approachBanner', function () {
 		var screenheight = parseInt($(document).height());
-		var scrolledpx = parseInt($(this).scrollTop());     
+		var scrolledpx = parseInt($(this).scrollTop());
 		var sum = screenheight+scrolledpx;
 		console.log($(this).scrollTop());
 		console.log("screen: " + screenheight);
@@ -178,7 +178,7 @@ function clientsDisplay() {
 	var clients = {
 		size : null,
 		windowHeight : null,
-		
+
 		devices: {
 			init: function() {
 				windowHeight = $(window).width();
@@ -191,12 +191,12 @@ function clientsDisplay() {
 				} else {
 					size = 'desktop';
 				}
-			}	
+			}
 		},
-		
+
 		loadClients: {
 			init: function() {
-				
+
 				$('.client-wrap').remove();
 				$.ajax({
 					url: 'includes/clients-' + size + '.php',
@@ -213,11 +213,11 @@ function clientsDisplay() {
 
 $(document).ready(function() {
 	// call functions here to execute
-	
+
 	if( /iPad|Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		
+
 		mobileBioSwitch();
-		
+
 	} else {
 		videoSizer();
 		sideBar();
@@ -228,17 +228,17 @@ $(document).ready(function() {
 		clientMap();
 		// approachBanner();
 		homeLogo();
-		
-		// Run Functions on Window Resize 
+
+		// Run Functions on Window Resize
 		$(window).resize(function() {
 			homeLogo();
 			sideBar();
 			clientsDisplay();
 		});
-		
+
 		// PARALLAX STELLAR.JS
 		// Left to Right diagonal parallax
-		$.stellar.positionProperty.diagonalRight = {
+		if ($.stellar) $.stellar.positionProperty.diagonalRight = {
 			setTop: function($el, newTop, originalTop) {
 		    	$el.css({
 		        	'top': newTop,
@@ -249,17 +249,17 @@ $(document).ready(function() {
 		    	$el.css('right', newRight);
 		    }
 		};
-		
-		$(window).stellar({
+
+		if ($(window).stellar) $(window).stellar({
 			horizontalScrolling: false,
 			hideElement: function($elem) { $elem.fadeOut(500); },
 			showElement: function($elem) { $elem.fadeIn(500); },
 			positionProperty: 'diagonalRight'
 		});
-		
+
 	}
 	sideBar();
 	clientsDisplay();
 	navSlide();
-	
+
 });
