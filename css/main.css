@@ -750,7 +750,7 @@ map#client-map area {
 
 /* THE TEAM page */
 #team {
-	height: 1490px;
+	height: 1790px;
 	z-index: 11;
 }
 #team ul {
@@ -777,10 +777,15 @@ ul#bio-photo-wrap li {
 	height: 300px;
 	background-image: url('../img/bio-photos.jpg');
 	background-repeat: no-repeat;
+	border: 4px solid #fff;
+}
+ul#bio-photo-wrap .active {
+	border: 4px solid #ed1c24 ;
 }
 li#photo-patrick-connolly { background-position: 0 0 }
 li#photo-don-moss { background-position: -220px 0; }
 li#photo-nan-lyons { background-position: -440px 0; }
+li#photo-julie { background-position: -440px 0; }
 li#photo-mike-burgess { background-position: -660px 0; }
 
 ul#bio-photo-wrap li span {
@@ -797,6 +802,7 @@ ul#bio-photo-wrap li span {
 li#photo-patrick-connolly span { background-position: 0 -300px; }
 li#photo-don-moss span { background-position: -220px -300px; }
 li#photo-nan-lyons span { background-position: -440px -300px; }
+li#photo-julie span { background-position: -440px -300px; }
 li#photo-mike-burgess span { background-position: -660px -300px; }
 
 ul#bio-photo-wrap li span h4 {
@@ -828,7 +834,7 @@ ul#bio-arrows-wrap li.active span {
 }
 #bio-detail-wrap {
 	position: absolute;
-	top: 420px;
+	top: 720px;
 	width: 100%;
 	height: 500px;
 }
