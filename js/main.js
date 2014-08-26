@@ -86,18 +86,12 @@ function bioSwitch() {
 	// Click Switch Affect
 	$('#bio-photo-wrap li').click(function() {
 		var bioId = $(this).attr('id');
-		var arrowId = '#arrow-' + bioId.substring(6);
+		$('#bio-photo-wrap li').removeClass('active');
+		$(this).addClass('active');
 		var detailId = '#bio-'+ bioId.substring(6);
 
 		$('#bio-detail-wrap > .active').fadeOut(400, 'easeInOutQuint').removeClass('active');
 		$(detailId).fadeIn(400, 'easeInQuint').addClass('active');
-    	
-		$('#bio-arrows-wrap > li.active span').fadeOut(400, 'easeInOutQuint', function() {
-			$(this).parent('li').removeClass('active');
-		});
-		$(arrowId + ' span').fadeIn(400, 'easeInQuint', function() {
-			$(this).parent('li').addClass('active');
-		});
 	});
 
 }
