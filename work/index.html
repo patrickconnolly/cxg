@@ -35,12 +35,63 @@
         height:100%;
       }
 
+      #about {
+        background: initial;
+      }
+      #showLeftPush {
+        z-index:1000;
+      }
+
       .bgx {
         background: url('img/feature/cisco-blurbg.jpg') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+      }
+
+      .carousel-caption {
+        font-size: 45px;
+        bottom: 30px;
+      }
+
+      #work h3 {
+        width: 80%;
+        text-align: left;
+        margin: 0 auto;
+        text-transform: initial;
+        font-weight: 100;
+        padding: 10px 0px 30px;
+        color: #999;
+        text-shadow: 1px 1px 1px #333;
+      }
+
+      #work h2 {
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+        color: #fff;
+        font-weight: 100;
+      }
+
+      .slapbar {
+        position: relative;
+        background:rgba(0,0,0,0.4);
+        padding:20px 0px;
+        margin: 40px 0px 20px;
+      }
+
+      .feature-photoreel {
+        margin: 40px 0px;
+      }
+      .feature-photoreel img {
+        width: 28%;
+        margin: 10px;
+        border: 1px solid #444;
+        cursor: pointer;
+      }
+      .feature-photoreel img:hover {
+        border: 1px solid #fff;
       }
     </style>
 
@@ -68,18 +119,97 @@
       </div>
       <div class="cbp-spmenu-cutout"></div>
     </nav>
-    <div id="main-content">
-      <section id="home">
-        <img id="intro-logo" src="img/cxg-logo-lrg.png" alt="CXG Collective-Experience Group" style="height:100px; margin-top:30px" />
 
-        <h4 class="gray-font">Browse some of our latest work</h4>
-        <p class="gray-font">Live events, branding and video production</p>
-      </section><!-- end section HOME -->
 
-      <section id="work" style="background:#ddd; margin-top:50px;">
+    <div id="content">
+      <section id="workheader">
+        <div>
+          <img id="intro-logo" src="img/cxg-logo-lrg-invert.png" alt="CXG Collective-Experience Group" style="height:100px; margin-top:30px" />
+        </div>
 
-        <h5>Insert yo homeboy imagerz heer</h5>
+        <div class="slapbar">
+          <h4 style="font-weight:100; text-shadow:1px 1px 1px #333;" class="gray-font"><b>Browse</b> some of our <b>latest work</b></h4>
+          <p class="gray-font">Live events, branding and video production</p>
+        </div>
+      </section><!-- end section workheader -->
 
+
+
+      <section id="work" style="margin-top:50px;">
+
+        <div class="feature-text-header">
+          <h2>Cisco</h2>
+          <h3>Live ACI event launch</h3>
+        </div>
+
+        <div style="max-width:1000px; width:75%; margin:0 auto;" id="feature-cisco" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#feature-cisco" data-slide-to="0"></li>
+            <li data-target="#feature-cisco" data-slide-to="1" class="active"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/feature/before.jpg">
+              <div class="carousel-caption">
+                Before
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/feature/after.jpg">
+              <div class="carousel-caption">
+                After
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#feature-cisco" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#feature-cisco" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+
+
+        <div class="feature-photoreel">
+          <img data-mfp-src="img/feature/cisco1.jpg" src="img/feature/cisco1.jpg">
+          <img data-mfp-src="img/feature/cisco2.jpg" src="img/feature/cisco2.jpg">
+          <img data-mfp-src="img/feature/cisco3.jpg" src="img/feature/cisco3.jpg">
+        </div>
+
+        <div class="videobox" style="padding:40px 20px">
+          <div class="xembed-responsive xembed-responsive-16by9">
+          <!-- Cisco Application Centric Infrastructure Launch: Redefining the Power of IT -->
+            <!--iframe class="embed-responsive-item" width="560" height="315" src="//www.youtube.com/embed/QGvTeh0B8Og" frameborder="0" allowfullscreen></iframe-->
+            Video 1
+          </div>
+
+          <div>
+            <!-- Marketing Velocity 2014 Highlights -->
+            Video 2
+            <!-- <iframe width="560" height="315" src="//www.youtube.com/embed/q_KmQrH4s_Y" frameborder="0" allowfullscreen></iframe> -->
+          </div>
+        </div>
+
+      </section>
+
+      <section id="about">
+        <div id="about-wrap" class="black-bg">
+          <div class="skyline" id="ny-skyline"></div>
+          <div class="skyline" id="chi-skyline"></div>
+          <div class="skyline" id="sf-skyline"></div>
+          <div class="container">
+            <h2 class="white-font">About Us</h2>
+            <div class="about-info">
+              <h5 class="white-font">CXG is wholly owned by InVision Communications Inc., (<a href="http://www.iv.com" target="_blank">www.iv.com</a>) an award winning event marketing and communications company with offices in San Francisco, Chicago, and New York.</h5>
+              <hr />
+            </div>
+          </div>
+        </div>
       </section>
     </div><!-- end main content -->
 
@@ -90,9 +220,11 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <!--script src="js/jquery.easing.1.3.js"></script-->
-    <!--script src="js/stellar.js"></script>  Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+    <script src="../js/stellar.js"></script>
     <script src="js/classie.js"></script>
     <script>
+      $(window).stellar();
+
       $('.feature-photoreel').magnificPopup({
         delegate: 'img',
         type: 'image'
