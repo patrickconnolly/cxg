@@ -55,6 +55,10 @@
         bottom: 30px;
       }
 
+      #workheader {
+        margin-bottom: 50px;
+      }
+
       #work h3 {
         width: 80%;
         text-align: left;
@@ -92,6 +96,31 @@
       }
       .feature-photoreel img:hover {
         border: 1px solid #fff;
+      }
+
+      .feature-content {
+        display: block;
+        overflow: hidden;
+        width:75%;
+        margin: 0 auto;
+      }
+
+      .feature-content .text {
+        float: left;
+        max-width: 60%;
+        color: #eee;
+      }
+      .feature-content .text p {
+        text-align: left;
+        font-size: 16px;
+        line-height: 26px;
+        padding: 0;
+      }
+      .feature-content .sidebar {
+        float: left;
+        margin-left:30px;
+        color: #ccc;
+        font-size: 14px;
       }
     </style>
 
@@ -135,13 +164,17 @@
 
 
 
-      <section id="work" style="margin-top:50px;">
+      <section id="work">
 
+        <!-- Header text -->
         <div class="feature-text-header">
+          <!-- Title -->
           <h2>Cisco</h2>
+          <!-- Sub header -->
           <h3>Live ACI event launch</h3>
         </div>
 
+        <!-- Carousel -->
         <div style="max-width:1000px; width:75%; margin:0 auto;" id="feature-cisco" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -172,9 +205,10 @@
           <a class="right carousel-control" href="#feature-cisco" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
-        </div>
+        </div> <!-- /end Carousel -->
 
 
+        <!-- Photo reel -->
         <div class="feature-photoreel">
           <img data-mfp-src="img/feature/cisco1.jpg" src="img/feature/cisco1.jpg">
           <img data-mfp-src="img/feature/cisco2.jpg" src="img/feature/cisco2.jpg">
@@ -182,16 +216,29 @@
         </div>
 
         <div class="videobox" style="padding:40px 20px">
-          <div class="xembed-responsive xembed-responsive-16by9">
+          <!-- Full size video -->
+          <div class="embed-responsive embed-responsive-16by9">
           <!-- Cisco Application Centric Infrastructure Launch: Redefining the Power of IT -->
             <!--iframe class="embed-responsive-item" width="560" height="315" src="//www.youtube.com/embed/QGvTeh0B8Og" frameborder="0" allowfullscreen></iframe-->
             Video 1
           </div>
 
+          <!-- Default width video -->
           <div>
             <!-- Marketing Velocity 2014 Highlights -->
             Video 2
             <!-- <iframe width="560" height="315" src="//www.youtube.com/embed/q_KmQrH4s_Y" frameborder="0" allowfullscreen></iframe> -->
+          </div>
+        </div>
+
+        <div class="feature-content">
+          <div class="text">
+            <p>Content text re: <a href="#">descriptive</a> text. Writing additional text to force wrap. More <b>additional</b> text to force wrap.</p>
+            <p>Content text re: descriptive text</p>
+            <p>Content text re: descriptive text</p>
+          </div>
+          <div class="sidebar">
+            Sidebar.. images, alt text etc.
           </div>
         </div>
 
