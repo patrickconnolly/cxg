@@ -38,12 +38,17 @@
       #about {
         background: initial;
       }
-      #showLeftPush {
-        z-index:1000;
+
+      .first-workpiece {
+        background: url('img/feature/cisco-blurbg.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
       }
 
-      .bgx {
-        background: url('img/feature/cisco-blurbg.jpg') no-repeat center center fixed;
+      #template-work {
+        background: url('img/feature/_imgblurbg.jpg') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -55,8 +60,9 @@
         bottom: 30px;
       }
 
-      .workheader {
-        margin-bottom: 50px;
+      .work {
+        padding-top: 100px;
+        padding-bottom: 100px;
       }
 
       .work h3 {
@@ -85,6 +91,20 @@
         margin: 40px 0px 20px;
       }
 
+      .carousel {
+        max-width:1000px;
+        width:75%;
+        margin:0 auto;
+      }
+
+      .carousel img {
+        width:100%;
+      }
+
+      .videobox {
+        padding:40px 20px;
+      }
+
       .feature-photoreel {
         margin: 40px 0px;
       }
@@ -107,7 +127,7 @@
 
       .feature-content .text {
         float: left;
-        max-width: 60%;
+        width: 60%;
         color: #eee;
       }
       .feature-content .text p {
@@ -118,16 +138,30 @@
       }
       .feature-content .sidebar {
         float: left;
-        margin-left:30px;
+        text-align: left;
+        padding-left:20px;
+        width:40%;
         color: #ccc;
         font-size: 14px;
+      }
+
+      #about {
+        height: initial;
+        background:#000;
+      }
+      #about-wrap {
+        height: initial;
+      }
+      #about .container {
+        height: 500px;
       }
     </style>
 
   </head>
   <body class="cbp-spmenu-push">
+
     <a name="top"></a>
-    <div class="bgx">
+    <div class="first-workpiece">
 
     <button class="fixed-btn" id="showLeftPush">Show</button>
     <a href="#top" class="fixed-btn" id="toTop"><span>Back to Top</span></a>
@@ -176,7 +210,7 @@
         </div>
 
         <!-- Carousel -->
-        <div style="max-width:1000px; width:75%; margin:0 auto;" id="feature-cisco" class="carousel slide" data-ride="carousel">
+        <div id="feature-cisco" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#feature-cisco" data-slide-to="0"></li>
@@ -216,27 +250,121 @@
           <img data-mfp-src="img/feature/cisco3.jpg" src="img/feature/cisco3.jpg">
         </div>
 
-        <div class="videobox" style="padding:40px 20px">
+        <div class="videobox">
           <!-- Full size video -->
           <div class="embed-responsive embed-responsive-16by9">
           <!-- Cisco Application Centric Infrastructure Launch: Redefining the Power of IT -->
-            <!--iframe class="embed-responsive-item" width="560" height="315" src="//www.youtube.com/embed/QGvTeh0B8Og" frameborder="0" allowfullscreen></iframe-->
-            Video 1
+            <iframe class="embed-responsive-item" width="560" height="315" src="http://www.youtube.com/embed/QGvTeh0B8Og" frameborder="0" allowfullscreen></iframe>
           </div>
 
           <!-- Default width video -->
           <div>
             <!-- Marketing Velocity 2014 Highlights -->
-            Video 2
             <!-- <iframe width="560" height="315" src="//www.youtube.com/embed/q_KmQrH4s_Y" frameborder="0" allowfullscreen></iframe> -->
           </div>
         </div>
 
         <div class="feature-content">
           <div class="text">
+            <p>Content text re: <a href="#">linking</a> text. Writing additional text to force wrap. More <b>additional</b> text to force wrap. And finally, a little more text, <i>"Just to make it <b>interesting</b>"</i>.</p>
+            <p>Content text re: descriptive text</p>
+            <p>Content text re: descriptive text</p>
+          </div>
+          <div class="sidebar">
+
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" width="560" height="315" src="http://www.youtube.com/embed/q_KmQrH4s_Y" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- Featured project -->
+      <section id="template-work" class="work workpiece">
+
+        <!-- Header text -->
+        <div class="feature-text-header">
+          <!-- Title -->
+          <h2>Template header</h2>
+          <!-- Sub header -->
+          <h3>Subheader</h3>
+        </div>
+
+        <!-- Carousel -->
+        <div id="feature-template" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#feature-template" data-slide-to="0" class="active"></li>
+            <li data-target="#feature-template" data-slide-to="1"></li>
+            <li data-target="#feature-template" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/feature/_carouselimg.jpg">
+              <div class="carousel-caption">
+                A
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/feature/_carouselimg.jpg">
+              <div class="carousel-caption">
+                B
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/feature/_carouselimg.jpg">
+              <div class="carousel-caption">
+                C
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#feature-template" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#feature-template" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div> <!-- /end Carousel -->
+
+
+        <!-- Photo reel -->
+        <div class="feature-photoreel">
+          <img data-mfp-src="img/feature/_img.jpg" src="img/feature/_img.jpg">
+          <img data-mfp-src="img/feature/_img.jpg" src="img/feature/_img.jpg">
+          <img data-mfp-src="img/feature/_img.jpg" src="img/feature/_img.jpg">
+        </div>
+
+
+        <!-- Full size video -->
+        <!-- Commented out...
+        <div class="videobox">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" width="560" height="315" src="http://www.youtube.com/embed/QGvTeh0B8Og" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        -->
+
+        <!-- Default width (small) video -->
+        <!-- Commented out...
+        <div class="videobox">
+          <div>
+            <iframe width="560" height="315" src="http://www.youtube.com/embed/q_KmQrH4s_Y" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        -->
+
+
+        <div class="feature-content">
+          <div class="text">
             <p>Content text re: <a href="#">descriptive</a> text. Writing additional text to force wrap. More <b>additional</b> text to force wrap.</p>
-            <p>Content text re: descriptive text</p>
-            <p>Content text re: descriptive text</p>
+            <p>Another paragraph...</p>
+            <p>Yet more text...</p>
           </div>
           <div class="sidebar">
             Sidebar.. images, alt text etc.
@@ -281,7 +409,6 @@
       var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
         showRightPush = document.getElementById( 'showRightPush' ),
         body = document.body;
-        //overall = document.getElementById('overall');
 
       showLeftPush.onclick = function() {
         classie.toggle( this, 'active' );
@@ -298,7 +425,5 @@
         }
       }
     </script>
-    <!--script src="js/videojs/video.js"></script>
-    <script src="js/main.js"></script-->
   </body>
 </html>
