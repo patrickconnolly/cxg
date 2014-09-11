@@ -323,12 +323,6 @@
 							<span><h4>Mike Burgess</h4></span>
 						</li>
 					</ul>
-					<ul id="bio-arrows-wrap" data-stellar-ratio="0.9">
-						<li id="arrow-patrick-connolly" class="active"><span></span></li>
-						<li id="arrow-don-moss"><span></span></li>
-						<li id="arrow-nan-lyons"><span></span></li>
-						<li id="arrow-mike-burgess"><span></span></li>
-					</ul>
 
 					<div id="bio-detail-wrap" data-stellar-ratio="1">
 						<div class="bio-details active" id="bio-patrick-connolly">
