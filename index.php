@@ -313,6 +313,9 @@
 						<li id="photo-nan-lyons" class="active">
 							<span><h4>Nan Lyons</h4></span>
 						</li>
+						<!--li id="photo-julie">
+							<span><h4>Julie Julie</h4></span>
+						</li-->
 						<li id="photo-patrick-connolly">
 							<span><h4>Patrick Connolly</h4></span>
 						</li>
@@ -352,6 +355,13 @@
 							<hr />
 							<p>President Mike Burgess could be called the Ghidorah of the team, having worn three hats, during his career in the event marketing industry. His time working as a Creative Director, Head of Production and Client Services Director has given him a deep seated empathy for the role each plays in creating a spectacular result. Mike began his career in London where due to a dire paucity of TV channels at the time, he developed his love for theater and concert experiences. The rush of seeing an audience react enthusiastically to a well-orchestrated performance or experience has never left him. He has had the privilege to work with some of the world's most exciting brands on some of their most important event marketing initiatives. Mike is less a three headed-monster and more a three headed-matchmaker, bringing people and brands together in perfect harmony.</p>
 						</div>
+
+						<!--div class="bio-details" id="bio-julie">
+							<h2 class="black-font">Julie <span class="red-font">Julie</span></h2>
+							<h4>Special Ops</h4>
+							<hr />
+							<p>Julie is a ninja who kills it. Sometimes she rides a dragon to work. Also this text needs to be long enough to wrap. Hopefully it does. Sometimes you have to do things like this.</p>
+						</div-->
 					</div>
 				</div>
 
