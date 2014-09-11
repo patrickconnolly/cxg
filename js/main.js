@@ -232,7 +232,7 @@ $(document).ready(function() {
 
 		// PARALLAX STELLAR.JS
 		// Left to Right diagonal parallax
-		if ($.stellar) $.stellar.positionProperty.diagonalRight = {
+		$.stellar.positionProperty.diagonalRight = {
 			setTop: function($el, newTop, originalTop) {
 		    	$el.css({
 		        	'top': newTop,
@@ -244,7 +244,7 @@ $(document).ready(function() {
 		    }
 		};
 
-		if ($(window).stellar) $(window).stellar({
+		$(window).stellar({
 			horizontalScrolling: false,
 			hideElement: function($elem) { $elem.fadeOut(500); },
 			showElement: function($elem) { $elem.fadeIn(500); },
