@@ -750,7 +750,7 @@ map#client-map area {
 
 /* THE TEAM page */
 #team {
-	height: 1790px;
+	height: 1490px;
 	z-index: 11;
 }
 #team ul {
@@ -834,7 +834,7 @@ ul#bio-arrows-wrap li.active span {
 }
 #bio-detail-wrap {
 	position: absolute;
-	top: 720px;
+	top: 420px;
 	width: 100%;
 	height: 500px;
 }
