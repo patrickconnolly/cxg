@@ -310,14 +310,14 @@
 				</div>
 				<div class="wrap container gray-font">
 					<ul id="bio-photo-wrap" class="white-font" data-stellar-ratio="0.9">
-						<li id="photo-patrick-connolly" class="active">
+						<li id="photo-nan-lyons" class="active">
+							<span><h4>Nan Lyons</h4></span>
+						</li>
+						<li id="photo-patrick-connolly">
 							<span><h4>Patrick Connolly</h4></span>
 						</li>
 						<li id="photo-don-moss">
 							<span><h4>Don Moss</h4></span>
-						</li>
-						<li id="photo-nan-lyons">
-							<span><h4>Nan Lyons</h4></span>
 						</li>
 						<li id="photo-mike-burgess">
 							<span><h4>Mike Burgess</h4></span>
@@ -325,7 +325,7 @@
 					</ul>
 
 					<div id="bio-detail-wrap" data-stellar-ratio="1">
-						<div class="bio-details active" id="bio-patrick-connolly">
+						<div class="bio-details" id="bio-patrick-connolly">
 							<h2 class="black-font">Patrick <span class="red-font">Connolly</span></h2>
 							<h4>Executive Technology Director</h4>
 							<hr />
@@ -339,7 +339,7 @@
 							<p>Executive Creative Director Don Moss thrives on the big ideas that change the way people think, act and believe. His award-winning creative leadership has inspired major global initiatives for brands in sectors ranging from automotive soft drinks and technology to, pharmaceuticals and sports. Don is known for delivering the seemingly impossible tasks. Need to launch hybrid cars in the oil-rich middle-east? Don’s done it. Need to stage the world’s largest vehicle immersion for a major press event? Done. Starting with a keen understanding of the audience, Don embraces digital, social media and immersive environments in conjunction with the usual marketing staples. Every brand assignment is infused with excitement and energy whether it is an online product launch, live press event, tradeshow, lead development program or worldwide sales meeting. </p>
 						</div>
 
-						<div class="bio-details" id="bio-nan-lyons">
+						<div class="bio-details active" id="bio-nan-lyons">
 							<h2 class="black-font">Nan <span class="red-font">Lyons</span></h2>
 							<h4>Account Director</h4>
 							<hr />
