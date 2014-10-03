@@ -128,6 +128,7 @@ function callUsList() {
 		var windowTop = $(window).scrollTop();
 		var slideInDelay = 0;
 
+		if (!$('#call-us-when').length) return;
 
 		if(windowTop >= $('#call-us-when').offset().top) { // if the user scrolls to "Call Us When"
 			if(!$('#magnify-list').hasClass('active')) { // if the slide out animation hasn't played yet,
