@@ -170,14 +170,7 @@
       <div class="cbp-spmenu-inner">
         <h1>CXG</h1>
         <ul id="sideNav">
-          <li><a href="/#home">Home</a></li>
-          <li><a href="/#what-we-do">What We Do</a></li>
-          <li><a href="/#call-us-when">When To Call Us</a></li>
-          <li><a href="/#approach">Approach</a></li>
-          <li><a href="/#experience">Our Team</a></li>
-          <li><a href="/work/">Our Work</a></li>
-          <li><a href="/#contact">Contact</a></li>
-          <li><a href="/#about">About Us</a></li>
+          <?php include '../nav.html'; ?>
         </ul>
       </div>
       <div class="cbp-spmenu-cutout"></div>
