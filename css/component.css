@@ -1,4 +1,9 @@
 /* General styles for all menus */
+ul#sideNav {
+	margin: 0;
+	padding-left: 0px;
+}
+
 .cbp-spmenu {
 	position: fixed;
 }
