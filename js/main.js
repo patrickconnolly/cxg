@@ -214,7 +214,7 @@ $(document).ready(function() {
 		mobileBioSwitch();
 
 	} else {
-		videoSizer();
+		if (typeof videojs !== 'undefined') videoSizer();
 		sideBar();
 		navSlide();
 		toTop();
