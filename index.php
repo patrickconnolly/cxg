@@ -165,29 +165,18 @@
 					<div id="slide4a" class="angle-slide gray-bg right-bg" data-stellar-ratio="2"></div>
 				</div>
 				<div class="wrap">
-					<h2 data-stellar-ratio="0.8" class="diagonalRight">Call Us When</h2>
-					<h3 class="gray-font diagonalRight" data-stellar-ratio="0.9">You <span class="red-font">Need</span> / <span class="red-font">Wish</span> / <span class="red-font">Want</span> / To...</h3>
+					<h2 data-stellar-ratio="0.8" class="diagonalRight">Our Clients Call Us When</h2>
+					<h3 class="gray-font diagonalRight" data-stellar-ratio="0.9">They <span class="red-font">Need</span> / <span class="red-font">Wish</span> / <span class="red-font">Want</span> / To...</h3>
 					<ul class="text-left" id="magnify-list" data-stellar-ratio="1">
 						<li><span class="red">Launch</span> a new product or a big <span class="black">idea</span></li>
-						<li><span class="red">Transform</span> an <span class="black">environment</span> into memorable <span class="black">brand immersion</span></li>
-						<li><span class="red">Amaze</span> <span class="black">prospects</span></li>
-						<li><span class="red">Engage</span> new <span class="black">consumers</span></li>
-						<li><span class="red">Improve</span> brand <span class="black">opinion</span> and <span class="black">awareness</span></li>
-						<li>Put your <span class="red">brand</span> on the <span class="black">map</span></li>
-						<li><span class="red">Surprise</span> and <span class="red">delight</span> brand <span class="black">loyalists</span></li>
-						<li><span class="red">Impress</span> <span class="black">analysts</span></li>
-						<li><span class="red">Inspire</span> your channel <span class="black">partners</span></li>
-						<li><span class="red">Gain</span> <span class="black">mindshare</span> with developers</li>
-						<li><span class="red">Shift</span> your <span class="black">paradigm</span></li>
-						<li><span class="red">Achieve</span> aggressive sales <span class="black">targets</span></li>
-						<li><span class="red">Grow</span> your <span class="black">market share</span></li>
-						<li><span class="red">Speak</span> with one <span class="black">voice</span></li>
-						<li><span class="red">Redefine</span> your <span class="black">brand</span></li>
-						<li><span class="red">Synchronize</span> your <span class="black">sales</span> and marketing <span class="black">communications</span></li>
-						<li><span class="red">Energize</span> your <span class="black">employee base</span></li>
-						<li><span class="red">Generate</span> measurable <span class="black">results</span></li>
-						<li><span class="red">Reach</span> deeper into a new <span class="black">markets</span></li>
-						<li><span class="red">Connect</span> with elusive <span class="black">consumers</span></li>
+						<li><span class="red">Amaze</span> <span class="black">prospects, customers, partners or employees</span></li>
+						<li><span class="red">Improve</span> <span class="black">brand awareness and opinion</span></li>
+						<li><span class="red">Transform</span> an environment into a <span class="black">memorable brand immersion</span></li>
+						<li><span class="red">Grow</span> <span class="black">market share</span></li>
+						<li><span class="red">Redefine</span> their <span class="black">brand</span></li>
+						<li><span class="red">Communicate</span> effectively with <span class="black">one voice</span></li>
+						<li><span class="red">Breach</span> <span class="black">new markets</span></li>
+						<li><span class="red">Improve</span> their <span class="black">customer experience</span></li>
 					</ul>
 
 				</div>
