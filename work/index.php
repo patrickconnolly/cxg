@@ -387,7 +387,6 @@
 
     <script src="http://code.jquery.com/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
     <!--script src="js/jquery.easing.1.3.js"></script-->
     <script src="../js/stellar.js"></script>
     <script src="js/classie.js"></script>
