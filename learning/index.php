@@ -1,33 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html class="no-js" lang="en">
   <head>
-    <meta charset="utf-8">
-      <title>CXG</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>CXG</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      <meta name="description" content="CXG.A new full service agency. Helping clients design, develop and deliver
+    <meta name="description" content="CXG.A new full service agency. Helping clients design, develop and deliver
     effective brand interactions for Consumers, Customers, Developers and User Groups, Distributors, Press, Investors/Analysts, Sales Organizations and Employee Stakeholders.">
     <meta name="keywords" content="CXG, agency, brands">
-      <meta name="author" content="PowerHouse Creatve">
-
+    <meta name="author" content="PowerHouse Creatve">
     <!-- favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
     <!-- styles -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-      <!-- <link href="css/bootstrap-responsive.css" rel="stylesheet"> -->
-    <link href="../css/component.css" rel="stylesheet"/>
+    <!-- <link href="css/bootstrap-responsive.css" rel="stylesheet"> -->
+    <link href="../css/component.css" rel="stylesheet">
     <!--link href="js/videojs/video-js.css" rel="stylesheet" type="text/css"-->
-    <link href="../css/main.css" rel="stylesheet" />
-
+    <link href="../css/main.css" rel="stylesheet">
     <!--script src="js/modernizr.custom.js"></script-->
-
     <!-- HTML5 shim, for IE6-/8 support of HTML5 elements -->
-      <!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
-      <![endif]-->
-
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>      <![endif]-->
     <style type="text/css">
       html { height:100%; width:100%; }
       body {
@@ -127,71 +120,53 @@
         height: 500px;
       }
     </style>
-
   </head>
-  <body class="cbp-spmenu-push">
-
-    <a name="top"></a>
-    <div class="bgx">
-
-    <button class="fixed-btn" id="showLeftPush">Show</button>
-    <a href="#top" class="fixed-btn" id="toTop"><span>Back to Top</span></a>
-
-    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
-      <div class="cbp-spmenu-inner">
-        <h1>CXG</h1>
-        <ul id="sideNav">
-          <?php include '../nav.html'; ?>
-        </ul>
+  <body class="cbp-spmenu-push"> <a name="top"></a>
+    <div class="bgx"> <button class="fixed-btn" id="showLeftPush">Show</button>
+      <a href="#top" class="fixed-btn" id="toTop"><span>Back to Top</span></a>
+      <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+        <div class="cbp-spmenu-inner">
+          <h1>CXG</h1>
+          <ul id="sideNav">
+            <?php include '../nav.html'; ?>
+          </ul>
+        </div>
+      </nav>
+      <div id="content">
+        <section class="header">
+          <div class="logobox"> <img id="intro-logo" src="../img/cxg-logo-lrg-invert.png"
+              alt="CXG Collective-Experience Group"
+              style="height:100px; margin-top:30px">
+          </div>
+          <div class="slapbar">
+            <h3 class="gray-font"> Is your market changing<br>
+          faster than your employees'
+            <br>
+            <b>ability to adapt to it</b> ?</h3>
+          </div>
+        </section>
+        <!-- end section -->
+        <section class="work">
+          <!-- Header text -->
+          <div class="feature-text-header"> </div>
+          <div class="promobox" style="">
+            <p>Introducing CXG's <b class="highlight">Performance Practice</b>
+            </p>
+            <p>More than ever, success in today's marketplace requires the
+              ability to think quickly, adapt to various situations and solve
+              complex problems, all while exceeding customer expectations.</p>
+            <p>CXG provides instructionally solid, technologically-enabled
+              performance solutions that will transform employee performance
+              into a competitive advantage and directly impact business results.</p>
+            <p>Click here and learn more about how you can leverage your most
+              important investment.</p>
+            <p> <a href="cxg-experiential-learning.pdf"><button class="promobutton">Download
+                  PDF</button></a> </p>
+          </div>
+        </section>
       </div>
-      <div class="cbp-spmenu-cutout"></div>
-    </nav>
-
-
-    <div id="content">
-      <section class="header">
-        <div class="logobox">
-          <img id="intro-logo" src="../img/cxg-logo-lrg-invert.png" alt="CXG Collective-Experience Group" style="height:100px; margin-top:30px" />
-        </div>
-
-        <div class="slapbar">
-          <h3 class="gray-font">
-            Is your market changing faster than<br>
-            your employees' <b>ability to adapt to it</b>?</h3>
-          <p class="gray-font"></p>
-        </div>
-      </section><!-- end section -->
-
-      <section class="work">
-
-        <!-- Header text -->
-        <div class="feature-text-header">
-
-        </div>
-
-        <div class="promobox" style="">
-          <p>Introducing CXG's <b class="highlight">Performance Practice</b> </p>
-
-          <p>More than ever, success in today's marketplace requires the ability to think quickly, adapt to various situations and solve complex problems, all while exceeding customer expectations.</p>
-
-          <p>Instructionally solid, technologically-enabled performance solutions that will transform employee performance into a competitive advantage and directly impact business results.</p>
-
-          <p>Click here and learn more about how you can leverage your most important investment.</p>
-
-          <p>
-            <a href="cxg-experiential-learning.pdf"><button class="promobutton">Download PDF</button></a>
-          </p>
-
-        </div>
-
-
-      </section>
-
-    </div><!-- end main content -->
-
-  </div> <!-- end bgx -->
-
-
+      <!-- end main content --> </div>
+    <!-- end bgx -->
     <script src="http://code.jquery.com/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!--script src="js/jquery.easing.1.3.js"></script-->
