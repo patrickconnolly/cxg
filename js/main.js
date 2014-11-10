@@ -17,7 +17,7 @@ function homeLogo() {
 function navSlide() {
 	// nav clicking
 	$('#sideNav li a').click(function () {
-		var hash = $(this).attr('href').substring(1);
+		var hash = /[a-z\-]*?$/.exec( $(this).attr('href') )[0];
 		if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			var top = 0; // Mobile version has no top-margin`
 		} else {
@@ -68,7 +68,9 @@ function videoSizer() { // adjust the height
 	});
 	cxgVideo.on('ended', function() {
 		$('#cxg-video').fadeOut(2000, 'easeOutQuint');
-		$('html,body').animate({'scrollTop':0},0);
+		var local = window.location.hash.substr(1);
+		if(local) $('#sideNav li a[href="/#'+local+'"]').click();
+		else $('html,body').animate({'scrollTop':0},0);
 	});
 }
 
