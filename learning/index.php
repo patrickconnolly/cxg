@@ -40,7 +40,7 @@
       }
 
       .bgx {
-        background: url('img/bg.jpg') no-repeat center center fixed;
+        background: url('img/bg.jpg') no-repeat center top fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -54,9 +54,9 @@
 
       .slapbar h3 {
         font-weight:100;
-        text-shadow:1px 1px 1px #333;
+        text-shadow:1px 1px 1px #000;
         text-transform:none;
-        color:#333;
+        color:#000;
         text-align:right;
         margin:5%;
         font-size:35px;
@@ -140,9 +140,8 @@
           </div>
           <div class="slapbar">
             <h3 class="gray-font"> Is your market changing<br>
-          faster than your employees'
-            <br>
-            <b>ability to adapt to it</b> ?</h3>
+              faster than your employees <br>
+              can <b>adapt</b> ?</h3>
           </div>
         </section>
         <!-- end section -->
